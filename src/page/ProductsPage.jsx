@@ -1,6 +1,7 @@
 import { Link } from "react-router-dom";
 import Header from "../component/Header";
 import { products } from "../utils/mes-var";
+import Sidebar from "../component/Sidebar";
 
 function ProductsPage() {
   
@@ -10,6 +11,7 @@ function ProductsPage() {
   return (
     <>
       <Header pageTitle="Ma page sur les produits les moins chers"/>
+      <Sidebar pageTitle2="vous consultez les produits" />
       <main>
         <h1>Les produits les moins chers pour les grosses pinces : </h1>
 

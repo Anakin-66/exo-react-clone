@@ -1,6 +1,7 @@
 import { Link } from "react-router-dom";
 import Header from "../component/Header";
 import { products } from "../utils/mes-var";
+import Sidebar from "../component/Sidebar";
 
 function Home() {
 
@@ -22,6 +23,7 @@ function Home() {
     <>
     {/* J'appel le param de ma fonction pour y changer le texte de la balise p qui est dans le component header.jsx*/}
       <Header pageTitle="Ma home page" />
+      <Sidebar pageTitle2="Le titre du site" />
       <main>
         <section>
           <h2>Les trois derniers produits cuisine : </h2>

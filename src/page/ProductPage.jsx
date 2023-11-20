@@ -2,6 +2,7 @@
 import { useParams } from "react-router-dom";
 import Header from "../component/Header";
 import { products } from "../utils/mes-var";
+import Sidebar from "../component/Sidebar";
 
 function ProductPage() {
   // j'utilise la fonction useParams, qui me permet de récupérer un parametre dans l'url. Je nomme la variable comme le parametre déclarée pour la route dans App.js
@@ -17,12 +18,13 @@ function ProductPage() {
   const idInt = parseInt(id);
 
   const productFound = products.find((product) => {
-    return products.id === idInt;
+    return product.id === idInt;
   });
 
   return (
     <>
       <Header pageTitle="Ma page produit"/>
+      <Sidebar pageTitle2={`Vous consultez : ${productFound.title}`}/>
       <main>
         {productFound ? (
           <article>
