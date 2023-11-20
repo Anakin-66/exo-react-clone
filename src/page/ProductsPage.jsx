@@ -9,7 +9,7 @@ function ProductsPage() {
 
   return (
     <>
-      <Header />
+      <Header pageTitle="Ma page sur les produits les moins chers"/>
       <main>
         <h1>Les produits les moins chers pour les grosses pinces : </h1>
 

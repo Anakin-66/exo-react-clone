@@ -20,7 +20,8 @@ function Home() {
 
   return (
     <>
-      <Header />
+    {/* J'appel le param de ma fonction pour y changer le texte de la balise p qui est dans le component header.jsx*/}
+      <Header pageTitle="Ma home page" />
       <main>
         <section>
           <h2>Les trois derniers produits cuisine : </h2>

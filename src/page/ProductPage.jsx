@@ -22,7 +22,7 @@ function ProductPage() {
 
   return (
     <>
-      <Header />
+      <Header pageTitle="Ma page produit"/>
       <main>
         {productFound ? (
           <article>
