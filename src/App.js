@@ -4,6 +4,7 @@ import { BrowserRouter, Route, Routes } from "react-router-dom";
 import HomePage from "./page/HomePage";
 import ProductsPage from "./page/ProductsPage";
 import ProductPage from "./page/ProductPage";
+import Style from "./css/style.css"
 
 function App() {
   return (
