@@ -2,6 +2,7 @@ import { Link } from "react-router-dom";
 import Header from "../component/Header";
 import { products } from "../utils/mes-var";
 import Sidebar from "../component/Sidebar";
+import ProductCard from "../component/ProductCard";
 
 function Home() {
 
@@ -43,15 +44,9 @@ function Home() {
         </section>
         <section>
           <h3>Produits les moins chers : </h3>
-          {cheapestProducts.map((product) => {
+          {cheapestProducts.map((productProps) => {
             return (
-              <article>
-                <h3>{product.title}</h3>
-                <p>{product.price}</p>
-                <Link to={`/products/${product.id}`}>
-                  <button>Voir le produit</button>
-                </Link>
-              </article>
+              <ProductCard productValue={productProps} />
             );
           })}
         </section>
